@@ -1,8 +1,4 @@
-# HackCMU2021
-
-## Preamble
-
-This project has been coded in the scope of the HackCMU 2021: http://hackcmu.org/. The HackCMU is a 1 day beginnerfriendly hackthon organized by the Carnegie Mellon University in Pittsburgh. Our team won the Sustainability Hack Challenge by Bloomberg. The code in this repository is functional, however as the model has been build in only one day, our model is not well tuned and has been trained for only a really short time. Our model is able to detect some litter in images similar to the trainings data, but especially for unseen data and unseen trash objects, the results are not very good. We might improve the model in the future, but no timeframe is set for this yet. 
+# Litter Detection
 
 ## The Project
 
@@ -12,6 +8,10 @@ This project has been coded in the scope of the HackCMU 2021: http://hackcmu.org
 </div> 
 
 Our team, Philip Neugebauer, Hong Sng, Tyler Wilson, and Allan Nguyen, trained a model to detect litter in images using [Detectron2](https://github.com/facebookresearch/detectron2) and the [TACO dataset](https://github.com/pedropro/TACO). Our script can then read out the GPS location of the image. It reads out the location of all images in which litter has been detected and the number of litter in the image, and prints it out. The text can then be read in and presented on our heatmap, to visualize areas in which a lot of litter has been detected. Code for the visualization can be found [here](https://github.com/snghong/heatmap).
+
+## Note
+
+This project has been coded in the scope of the HackCMU 2021: http://hackcmu.org/. The HackCMU is a 1 day beginnerfriendly hackthon organized by the Carnegie Mellon University in Pittsburgh. Our team won the Sustainability Hack Challenge by Bloomberg. The code in this repository is functional, however as the model has been build in only one day, our model is not well tuned and has been trained for only a really short time. Our model is able to detect some litter in images similar to the trainings data, but especially for unseen data and unseen trash objects, the results are not very good. We might improve the model in the future, but no timeframe is set for this yet. 
 
 ## How we built it
 - We used TACO, an open image dataset of waste in the wild. It contains photos of litter taken under diverse environments, from tropical beaches to London streets. These images are manually labeled and segmented according to a hierarchical taxonomy to train and evaluate object detection algorithms. 
